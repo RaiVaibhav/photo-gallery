@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-l-vig {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.65) 0%,
+      rgba(0, 0, 0, 0.1) 35%,
+      rgba(0, 0, 0, 0.1) 67%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+  }
+  .g-t-col-100 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .flex-7 {
+    flex: 7;
+  }
+  .flex-3 {
+    flex: 3;
+  }
+  .flex-2 {
+    flex: 2
+  }
+  .modal-fade {
+    animation: fade-in 0.5s 1 linear;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes fade-in {
+    0% {
+      animation-timing-function: cubic-bezier(0.2242, 0.7499, 0.3142, 0.8148);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
