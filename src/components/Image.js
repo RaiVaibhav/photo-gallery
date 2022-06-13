@@ -25,7 +25,7 @@ export function Image({ image, IMAGE_WIDTH }) {
       </div>
       {isVisible && (
         <img
-          src={image.urls.raw + "&w=416"}
+          src={image.urls.raw + `&w=${IMAGE_WIDTH}`}
           className="w-full absolute box-border top-0 left-0 z-[5]"
           style={{
             maxWidth: IMAGE_WIDTH,

@@ -45,7 +45,7 @@ export function Modal({ children, fade = false, open = false, onClose }) {
         >
           x
         </span>
-        <div className="z-[2] relative mt-0 mx-auto overflow-x-hidden overflow-y-auto p-4">{children}</div>
+        <div className="z-[2] relative mt-0 w-full h-full overflow-x-hidden overflow-y-auto m-4">{children}</div>
       </div>
     ) : null,
     modalElement

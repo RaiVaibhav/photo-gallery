@@ -54,7 +54,7 @@ export const ModalProvider = ({ children }) => {
   return (
     <ModalContext.Provider value={providerValue}>
       {children}
-      <Modal onClose={disableModal} open={!!modalImage} fade={true}>
+      <Modal onClose={disableModal} open={!!modalImage}>
         <ModalImage image={modalImage} />
       </Modal>
     </ModalContext.Provider>
